@@ -56,7 +56,7 @@ export default function Search() {
           ))}
         </div>
       ) : (
-        <>
+        <div>
           {movieResults.length > 0 ? (
             <div>
               <div className='grid grid-cols-1 gap-3 md:grid-cols-6 px-18 md:px-0 mt-8'>
@@ -115,7 +115,7 @@ export default function Search() {
           ) : (
             <NotFound />
           )}
-        </>
+        </div>
       )}
     </div>
   );
