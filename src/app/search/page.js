@@ -60,8 +60,8 @@ export default function Search() {
           {movieResults.length > 0 ? (
             <div>
               <div className='grid grid-cols-1 gap-3 md:grid-cols-6 px-18 md:px-0 mt-8'>
-                {movieResults.slice(0, 18).map((movieRes) => (
-                  <MovieCard data={movieRes} />
+                {movieResults.slice(0, 18).map((index, movieRes) => (
+                  <MovieCard key={index} data={movieRes} />
                 ))}
               </div>
               <div className='flex items-center justify-center gap-3 my-6'>

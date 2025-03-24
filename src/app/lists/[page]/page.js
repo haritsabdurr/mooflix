@@ -55,8 +55,8 @@ export default function MovieLists() {
       ) : (
         <>
           <div className='grid grid-cols-1 gap-3 md:grid-cols-6 px-18 md:px-0 mt-8'>
-            {movieData.slice(0, 18).map((movie) => (
-              <MovieCard data={movie} />
+            {movieData.slice(0, 18).map((index, movie) => (
+              <MovieCard key={index} data={movie} />
             ))}
           </div>
           <div className='flex items-center justify-center gap-3 my-6'>
