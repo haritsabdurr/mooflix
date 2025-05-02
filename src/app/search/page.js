@@ -60,7 +60,7 @@ export default function Search() {
           {movieResults.length > 0 ? (
             <div>
               <div className='grid grid-cols-1 gap-3 md:grid-cols-6 px-18 md:px-0 mt-8'>
-                {movieResults.slice(0, 18).map((index, movieRes) => (
+                {movieResults.slice(0, 18).map((movieRes, index) => (
                   <MovieCard key={index} data={movieRes} />
                 ))}
               </div>

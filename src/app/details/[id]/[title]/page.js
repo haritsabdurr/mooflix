@@ -148,7 +148,7 @@ export default function Detail() {
               </div>
             ) : (
               <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
-                {similar.slice(0, 4).map((index, sim) => (
+                {similar.slice(0, 4).map((sim, index) => (
                   <MovieCard key={index} data={sim} />
                 ))}
               </div>
